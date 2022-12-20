@@ -1,0 +1,11 @@
+# dataset: TU, task: graph
+dataset.format format ['OGB']
+dataset.name dataset ['ogb2-molbbbp','ogb4-molbbbp','ogb6-molbbbp','ogb8-molbbbp','ogbg-molbbbp']
+dataset.task task ['graph']
+dataset.transductive trans [False]
+dataset.augment_label label ['']
+gnn.layers_pre_mp l_pre [1]
+gnn.layers_mp l_mp [3]
+gnn.layers_post_mp l_post [3]
+gnn.layer_type layer ['gcnconv','sageconv','gatconv','ginconv']
+optim.max_epoch epoch [100]
